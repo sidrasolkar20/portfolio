@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidra Solkar | Cybersecurity Analyst</title>
+
+    <style>
+        /* ================= CYBER THEME VARIABLES ================= */
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --accent: #00ff41;
+            --accent-dim: #008f11;
+            --secondary: #8b949e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--accent);
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #fff;
+            text-shadow: 0 0 5px var(--accent);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #30363d;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        /* ================= HERO ================= */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
+            object-fit: cover;
+            margin-bottom: 25px;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .glitch {
+            color: var(--accent);
+            text-shadow: 2px 2px var(--accent-dim);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background: var(--accent);
+            color: #000;
+        }
+
+        /* ================= SECTIONS ================= */
+        section {
+            padding: 60px 0;
+        }
+
+        h2 {
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        /* ================= GRID ================= */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 20px;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+
+        .tags span {
+            font-size: 0.75rem;
+            background: #21262d;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+            color: var(--accent);
+        }
+
+        /* ================= SKILLS ================= */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: #21262d;
+            padding: 5px 15px;
+            border-radius: 5px;
+            border: 1px solid #30363d;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--secondary);
+            font-size: 0.9rem;
+            border-top: 1px solid #30363d;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="logo">./Sidra_portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#writeups">Write-ups</a></li>
+                <li><a href="Sidra_Solkar_Resume.pdf" download>Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <img src="profile.jpg" alt="Sidra Solkar" class="profile-pic">
+
+        <h1>Hello, I'm <span class="glitch">Sidra Solkar</span></h1>
+        <p>Cybersecurity Analyst | Threat Hunter | CTF Player</p>
+        <p>Securing networks and analyzing threats through proactive research and hands-on labs.</p>
+
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="Sidra_Solkar_Resume.pdf" class="btn" download>Download Resume</a>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="about">
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <div class="skill-item">Network Security</div>
+            <div class="skill-item">Python & Bash Scripting</div>
+            <div class="skill-item">Linux Administration</div>
+            <div class="skill-item">Wireshark</div>
+            <div class="skill-item">Splunk / SIEM</div>
+            <div class="skill-item">Metasploit</div>
+            <div class="skill-item">Burp Suite</div>
+            <div class="skill-item">Active Directory</div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects">
+        <h2>Deployed Projects</h2>
+        <div class="grid">
+
+            <div class="card">
+                <h3>Python Keylogger & Detector</h3>
+                <p>Developed a basic keylogger for educational purposes and a detection script using behavioral analysis.</p>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Malware Analysis</span>
+                </div>
+                <br>
+                <a href="#">View on GitHub →</a>
+            </div>
+
+            <div class="card">
+                <h3>Home Lab: Active Directory</h3>
+                <p>Built a virtualized AD environment with Domain Controller, DNS, and simulated Kerberoasting attacks.</p>
+                <div class="tags">
+                    <span>VirtualBox</span>
+                    <span>Windows Server</span>
+                </div>
+                <br>
+                <a href="#">Read Case Study →</a>
+            </div>
+
+            <div class="card">
+                <h3>Network Traffic Monitor</h3>
+                <p>Bash script automating Nmap scans and alerts for new devices on the network.</p>
+                <div class="tags">
+                    <span>Bash</span>
+                    <span>Nmap</span>
+                    <span>Networking</span>
+                </div>
+                <br>
+                <a href="#">View Code →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= WRITEUPS ================= -->
+    <section id="writeups">
+        <h2>CTF Write-ups</h2>
+        <div class="grid">
+
+            <div class="card">
+                <h3>HackTheBox: Retired Machine</h3>
+                <p>Root access walkthrough via SQL injection and privilege escalation.</p>
+                <a href="#">Read Article →</a>
+            </div>
+
+            <div class="card">
+                <h3>TryHackMe: Blue Team Path</h3>
+                <p>Log analysis, phishing investigation, and SOC fundamentals.</p>
+                <a href="#">Read Article →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact">
+        <h2>Connect</h2>
+        <p>I am currently open to Junior Analyst and Penetration Testing roles.</p>
+        <br>
+        <a href="mailto:sidrasolkar11@gmail.com" class="btn">Email Me</a>
+        <a href="https://github.com/sidrasolkar20" style="margin-left:20px;">GitHub</a>
+        <br><br>
+        <a href="Sidra_Solkar_Resume.pdf" class="btn" download>Download Resume</a>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>&copy; 2024 Sidra Solkar. Built with secure coding practices.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
